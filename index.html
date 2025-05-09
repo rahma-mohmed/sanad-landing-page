@@ -72,7 +72,7 @@
                     <div class="row g-5">
                         <div class="col-lg-8 text-center text-lg-start">
                             <h1 class="text-white mb-4 animated slideInDown" style="text-align: right;"> مَرْحَبًا بِك فِى سند </h1>
-                            <p class="text-white pb-3 animated slideInDown" style="text-align: right;">تطبيق "سند" هو رفيقك الأمثل للتواصل، التعلم، والترجمة الفورية بلغة الإشارة.
+                            <p class="text-white pb-3 animated slideInDown" style="text-align: right;">تطبيق "سند" هو رفيقك الأمثل للتواصل، التعلم، والترجمة بلغة الإشارة.
                                 سواء كنت من ذوي الهمم أو من المهتمين بلغة الإشارة، "سند" هو الحل الذكي بين يديك</p>
                             <a href="#about" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">أقرأ المزيد</a>
                             <a href="mailto:sanadfcai@gmail.com" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">تواصل معنا</a>
@@ -128,20 +128,26 @@
                                 <div class="d-flex">
                                     <i class="fa fa-chalkboard-teacher fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
                                     <div class="ms-3">
-                                        <h2 class="mb-0" data-toggle="counter-up">+20</h2>
-                                        <p class="text-primary-gradient mb-0">درس تعليمي</p>
+                                        <h2 class="mb-0 d-flex align-items-center">
+                                            <span data-toggle="counter-up">20</span>
+                                            <span class="me-1">+</span> </h2>
+                                        <p class="text-primary-gradient mb-0">  درس تعليمي</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                                <div class="d-flex">
-                                    <i class="fa fa-sign-language fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
-                                    <div class="ms-3">
-                                        <h2 class="mb-0" data-toggle="counter-up">+500</h2>
-                                        <p class="text-secondary-gradient mb-0">كلمة وإشارة</p>
-                                    </div>
+                        <div class="d-flex">
+                            <i class="fa fa-sign-language fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                <div class="ms-3">
+                                    <h2 class="mb-0 d-flex align-items-center">
+                                    <span data-toggle="counter-up">  500</span>
+                                    <span class="me-1">+</span>
+                                    </h2>
+                                    <p class="text-secondary-gradient mb-0">كلمة وإشارة</p>
                                 </div>
                             </div>
+                        </div>
+
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -306,7 +312,7 @@
             <div class="container py-5 px-lg-5">
                 <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="text-primary-gradient fw-medium">كيف يعمل التطبيق؟</h5>
-                    <h1 class="mb-5">3 خطوات بسيطة</h1>
+                    <h1 class="mb-5">ثلاث خطوات بسيطة تفصلك عن تعلم لغة الإشارة والتواصل بها</h1>
                 </div>
                 <div class="row gy-5 gx-4 justify-content-center">
                     <!-- Step 1 -->
@@ -378,7 +384,7 @@
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                 <h5 class="text-primary-gradient fw-medium">تحميل التطبيق</h5>
                 <h1 class="mb-4">حمّل أحدث نسخة من تطبيق سند</h1>
-                <p class="mb-4">تطبيق "سند" هو الحل الأمثل لتعلم والتواصل بلغة الإشارة. يوفر لك أدوات تعليمية مبتكرة، ترجمة للغة الإشارة، ودروس تفاعلية لتجعل عملية التعلم والتواصل أكثر سهولة.</p>
+                <p class="mb-4">في سند، نؤمن أن التواصل حق للجميع. انضم إلينا في هذه الرحلة للمساهمة في بناء مجتمع أكثر شمولاً وتفهماً للجميع .</p>
                 <div class="row g-4">
                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                         <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
@@ -541,29 +547,29 @@
             <div class="col-lg-9">
                 <div class="wow fadeInUp" data-wow-delay="0.3s">
                     <p class="text-center mb-4">نحن نقدر ملاحظاتك واستفساراتك. إذا كان لديك أي أسئلة أو تحتاج إلى مساعدة، لا تتردد في التواصل معنا. نحن هنا لدعمك</p>
-                    <form>
+                    <form id="contactForm">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="اسمك">
+                                    <input type="text" class="form-control" id="name" name="from_name" placeholder="اسمك">
                                     <label for="name">اسمك</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="بريدك الإلكتروني">
+                                    <input type="email" class="form-control" id="email"  name="from_email" placeholder="بريدك الإلكتروني">
                                     <label for="email">بريدك الإلكتروني</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="الموضوع">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="الموضوع">
                                     <label for="subject">الموضوع</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="اكتب رسالتك هنا" id="message" style="height: 150px"></textarea>
+                                    <textarea class="form-control" placeholder="اكتب رسالتك هنا"  name="message" id="message" style="height: 150px"></textarea>
                                     <label for="message">الرسالة</label>
                                 </div>
                             </div>
@@ -611,8 +617,10 @@
                 <h4 class="text-white mb-4">النشرة الإخبارية</h4>
                 <p>اشترك في النشرة الإخبارية لتصلك آخر التحديثات والمعلومات الخاصة بتطبيق سند</p>
                 <div class="position-relative w-100 mt-3">
-                    <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="أدخل بريدك الإلكتروني" style="height: 48px;">
-                    <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                    <input id="newsletterEmail" class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="email" placeholder="أدخل بريدك الإلكتروني" style="height: 48px;" required>
+                    <button id="newsletterBtn" type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2">
+                        <i class="fa fa-paper-plane text-primary-gradient fs-4"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -621,7 +629,7 @@
         <div class="copyright">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">Sanad 2025</a>, جميع الحقوق محفوظة. 
+                    &copy; 2025 <a class="border-bottom" href="#">Sanad FCAI</a> 
                 </div>
             </div>
         </div>
@@ -644,6 +652,10 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

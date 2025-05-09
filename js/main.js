@@ -108,3 +108,57 @@ document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqIte
     faqItem.parentNode.classList.toggle('faq-active');
     });
 });
+
+(function(){
+    emailjs.init("HxAP7rKQ89i1RWCh9");
+})();
+
+
+document.getElementById('contactForm')
+    .addEventListener('submit', function(event) {
+        const Inputs = document.getElementById('contactForm');
+        event.preventDefault();
+
+        emailjs.sendForm('service_vpti7xc', 'template_sl5f39i', this)
+            .then(function() {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'تم الإرسال!',
+                    text: 'تم إرسال الرسالة بنجاح.',
+                    confirmButtonText: 'حسناً',
+                    confirmButtonColor:'rgb(156, 81, 203)'
+                });
+            }, function(error) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'حدث خطأ!',
+                    text: 'فشل في الإرسال، حاول مرة أخرى.',
+                    footer: '<code>' + JSON.stringify(error) + '</code>',
+                    confirmButtonText: 'موافق',
+                    confirmButtonColor: '#d33'
+                });
+            });
+        Inputs.reset();
+    });
+document.getElementById('newsletterBtn').addEventListener('click', function () {
+        const emailInput = document.getElementById('newsletterEmail');
+        const email = emailInput.value.trim();
+
+        // تحقق من البريد الإلكتروني
+        if (!email || !email.match(/^\S+@\S+\.\S+$/)) {
+            Swal.fire({
+                icon: 'warning',
+                title: 'تنبيه',
+                text: 'يرجى إدخال بريد إلكتروني صحيح.',
+                confirmButtonText: 'حسنًا'
+            });
+            return;
+        }
+        Swal.fire({
+            icon: 'success',
+            title: 'تم الاشتراك',
+            text: 'شكرًا لاشتراكك في النشرة الإخبارية',
+            confirmButtonText: 'تم'
+        });
+        emailInput.value = '';
+    });
