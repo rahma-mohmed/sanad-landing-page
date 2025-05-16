@@ -45,7 +45,6 @@ p {
   font-size: 21px;
   font-family: "Cairo", sans-serif;
 }
-
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
   background: linear-gradient(
