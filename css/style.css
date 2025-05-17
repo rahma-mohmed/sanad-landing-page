@@ -631,9 +631,10 @@ p {
   max-width: 220px;
   text-align: right;
 }
-input::placeholder,
-textarea::placeholder {
+input,
+textarea {
     text-align: right;
 }
+
 
 
