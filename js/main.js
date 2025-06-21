@@ -162,3 +162,6 @@ document.getElementById('newsletterBtn').addEventListener('click', function () {
         });
         emailInput.value = '';
     });
+
+
+    
