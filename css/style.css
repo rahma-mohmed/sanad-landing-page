@@ -338,7 +338,7 @@ p{
 /*** Hero Header ***/
 .hero-header {
     margin-bottom: 6rem;
-    padding: 16rem 0 0 0;
+    padding: 16rem 0 2rem 0;
     background:
         url(../img/bg-circle.png),
         url(../img/bg-triangle.png),
